@@ -1,0 +1,128 @@
+﻿<Window x:Class="kurs.Door"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kurs"
+        mc:Ignorable="d"
+        Title="Door" Height="515" Width="365" WindowStyle="None"
+        ResizeMode="NoResize"
+         Background="Transparent"
+        AllowsTransparency="True">
+    <Border CornerRadius="20">
+        <Border.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,1">
+                <GradientStop Color="#ff232d3e" Offset="0"/>
+                <GradientStop Color="#ff1d222c" Offset="1"/>
+                <GradientStop Color="#ff1d222c" Offset="0.509"/>
+            </LinearGradientBrush>
+        </Border.Background>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="250"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+          
+           
+            <TextBlock Text="Вход" 
+                   Width="260" Height="50"
+                   VerticalAlignment="Center" 
+                   TextAlignment="Center" 
+                   HorizontalAlignment="Center" 
+                   Foreground="White" 
+                   FontSize="40" FontWeight="UltraBold"
+                   Grid.Row="0"
+                   />
+
+            <TextBox Width="200"
+                     Height="40"
+                     Text="Логин(E-mail)"
+                     Grid.Row="1"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Top"
+                     Margin="0,20,0,0"
+                     Style="{StaticResource ModernTextBoxReg}"/>
+            <TextBox Width="200"
+                     Height="40"
+                     Text="Пароль"
+                     Grid.Row="1"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Top"
+                     Margin="0,100,0,0"
+                     Style="{StaticResource ModernTextBoxReg}"/>
+
+            <Button  Style="{StaticResource LightweightButton}"
+                     x:Name="Registr"
+                       IsHitTestVisible="True" 
+                     Width="140"
+                     Height="20"
+                     Grid.Row="1"
+                     VerticalAlignment="Top"
+                     HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Margin="0,160,0,0"
+                     FontWeight="Bold"
+                     FontSize="13"
+                     Foreground="#4C4CA9" Click="Registr_Click"
+                     >
+                      Зарегистрироваться
+            </Button>
+
+
+            <Button x:Name="btnDoor"
+                    Width="120"
+                    
+                    Height="40"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Background="#ff1d222c"
+                    Foreground="White"
+                    Content="Войти"
+                    FontSize="18"
+                    Grid.Row="2"
+                    Margin="0,0,10,30" Click="btnDoor_click"
+                    >
+                <Button.Style>
+                    <Style TargetType="Button" >
+                        <Setter Property="Foreground" Value="#a0a0a0"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border x:Name="ButtonBackground" BorderBrush="Gray">
+                                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                        <Border.BorderThickness>0</Border.BorderThickness>
+                                        <Border.CornerRadius>10</Border.CornerRadius>
+                                        <Border.Background>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#24397C" Offset="0" />
+                                                <GradientStop Color="#24397C" Offset="1" />
+                                            </LinearGradientBrush>
+                                        </Border.Background>
+                                    </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter TargetName="ButtonBackground" Property="Background">
+                                                <Setter.Value>
+                                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1" >
+                                                        <GradientStop Color="#ff232d3e" Offset="0" />
+                                                        <GradientStop Color="#ff232d3e" Offset="0.75" />
+                                                        <GradientStop Color="#ff232d3e" Offset="0.75" />
+                                                        <GradientStop Color="#ff232d3e" Offset="1" />
+                                                    </LinearGradientBrush>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                       
+                                    </ControlTemplate.Triggers>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <!--Конец блока или footer-->
+        </Grid>
+    </Border>
+
+</Window>
