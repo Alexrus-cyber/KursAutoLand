@@ -27,7 +27,9 @@ namespace kurs
 
         private void btnDoor_click(object sender, RoutedEventArgs e)
         {
-
+            MainWindow main = new MainWindow();
+            main.Show();
+            Close();
         }
         private void Registr_Click(object sender, RoutedEventArgs e)
         {

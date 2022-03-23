@@ -59,3 +59,4 @@ D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\kurs.csproj
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\kurs.csproj.CoreCompileInputs.cache
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\kurs.exe
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\kurs.pdb
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\Libraries\TextBoxNumber.baml
