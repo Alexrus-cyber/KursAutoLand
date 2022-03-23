@@ -10,6 +10,8 @@
                 <ResourceDictionary Source="/Libraries/TexboxTheme.xaml"/>
                 <ResourceDictionary Source="/Libraries/TextBoxReg.xaml"/>
                 <ResourceDictionary Source="/Libraries/ButtonReg.xaml"/>
+                <ResourceDictionary Source="/Libraries/TextBoxPass.xaml"/>
+                <ResourceDictionary Source="/Libraries/TextBoxNumber.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
