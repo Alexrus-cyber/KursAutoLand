@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kurs"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="900"
+        Height="600" Width="900"
         WindowStyle="None"
-        ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
-    <Border Background="#272537"
+        AllowsTransparency="True"
+        ResizeMode="CanResizeWithGrip">
+    
+        <Border Background="#272537"
             CornerRadius="20"
+            Mouse.MouseDown="Border_MouseDown"
             >
         <Grid>
             <Grid.ColumnDefinitions>
@@ -53,13 +55,13 @@
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"/>
 
-                <RadioButton Content="Акции"
+                <RadioButton Content="MyProfile"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButtonCompany"/>
+                             Style="{StaticResource MenuButtonTheme}" Checked="Myprofile"/>
             </StackPanel>
-            
+
 
             <TextBox Width="250"
                      Height="40"
@@ -69,11 +71,60 @@
                      Grid.Column="1"
                      Style="{StaticResource ModernTextBox}" TextChanged="TextBox_TextChanged"/>
 
+            <StackPanel HorizontalAlignment="Right"
+                        Orientation="Horizontal"
+                        Grid.Row="0"
+                        Grid.Column="1">
+                <Button x:Name="TurnApp" Width="20" Height="20"
+                    Content="_"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    FontSize="15"
+                    BorderThickness="0"
+                    Foreground="Gray"
+                    Background="Transparent"
+                    HorizontalAlignment="Right"
+                 
+                    Margin="0,0,0,6" Click="TurnApp_Click"
+                   >
+
+                </Button>
+
+
+
+                <Button x:Name="GoDrag" Width="20" Height="20"
+                    Content="▭"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    BorderThickness="0"
+                    Foreground="Gray"
+                    Background="Transparent"
+                    FontWeight="Bold"
+                 
+                    Margin="5,0,0,0" Click="DragApp_Click"
+                   >
+
+                </Button>
+
+
+                <Button x:Name="CloseApp" Width="20" Height="20"
+                    Content="x"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    BorderThickness="0"
+                    Foreground="Gray"
+                    Background="Transparent"
+                 
+                 
+                    Margin="5,0,15,0" Click="CloseApp_Click"
+                   >
+
+                </Button>
+            </StackPanel>
+
+
             <Frame NavigationUIVisibility="Hidden" x:Name="MainFrame" Grid.Column="1" Grid.Row="1"></Frame>
         </Grid>
-
-
-
-
     </Border>
+   
 </Window>

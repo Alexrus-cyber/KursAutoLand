@@ -40,10 +40,7 @@ namespace kurs
         {
             MainFrame.Navigate(new Action());
         }
-        private void RadioButtonCompany(object sender, RoutedEventArgs e)
-        {
 
-        }
 
         private void CloseApp_Click(object sender, RoutedEventArgs e)
         {
@@ -69,6 +66,12 @@ namespace kurs
             {
                 Application.Current.MainWindow.WindowState = WindowState.Maximized;
             }else Application.Current.MainWindow.WindowState = WindowState.Normal;
+        }
+
+
+        private void Myprofile(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Profile());
         }
     }
 }

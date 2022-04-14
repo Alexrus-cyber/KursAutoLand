@@ -12,6 +12,7 @@
                 <ResourceDictionary Source="/Libraries/ButtonReg.xaml"/>
                 <ResourceDictionary Source="/Libraries/TextBoxPass.xaml"/>
                 <ResourceDictionary Source="/Libraries/TextBoxNumber.xaml"/>
+                <ResourceDictionary Source="/Libraries/TexBoxProfile.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
