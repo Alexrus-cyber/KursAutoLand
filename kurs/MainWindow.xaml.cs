@@ -40,5 +40,35 @@ namespace kurs
         {
             MainFrame.Navigate(new Action());
         }
+        private void RadioButtonCompany(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CloseApp_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void TurnApp_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void DragApp_Click(object sender, RoutedEventArgs e)
+        {
+            if (Application.Current.MainWindow.WindowState != WindowState.Maximized)
+            {
+                Application.Current.MainWindow.WindowState = WindowState.Maximized;
+            }else Application.Current.MainWindow.WindowState = WindowState.Normal;
+        }
     }
 }

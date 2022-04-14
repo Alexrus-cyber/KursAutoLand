@@ -53,7 +53,13 @@
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"/>
 
+                <RadioButton Content="Акции"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButtonCompany"/>
             </StackPanel>
+            
 
             <TextBox Width="250"
                      Height="40"
