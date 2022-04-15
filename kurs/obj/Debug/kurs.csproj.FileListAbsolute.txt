@@ -63,3 +63,5 @@ D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\Libraries\T
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\Profile.g.cs
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\Profile.baml
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\Libraries\TexBoxProfile.baml
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\Services\Services1.g.cs
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\Services\Services1.baml

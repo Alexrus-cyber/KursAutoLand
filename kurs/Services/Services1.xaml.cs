@@ -13,21 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace kurs
+namespace kurs.Services
 {
     /// <summary>
-    /// Логика взаимодействия для Action.xaml
+    /// Логика взаимодействия для Services1.xaml
     /// </summary>
-    public partial class Action : Page
+    public partial class Services1 : Page
     {
-        public Action()
+        public Services1()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnBack(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Services.Services1());
+            Manager.MainFrame.GoBack();
         }
     }
 }

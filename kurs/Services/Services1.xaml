@@ -1,0 +1,39 @@
+﻿<Page x:Class="kurs.Services.Services1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:kurs.Services"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Services1">
+
+    <Border CornerRadius="20,0,0,0" Background="#121129">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <TextBlock Text="Новости"
+                   FontSize="28"
+                   Foreground="White"
+                   HorizontalAlignment="Left"
+                   Margin="450,0,0,20" Width="124"
+                   />
+                <StackPanel Orientation="Horizontal" Margin="250,0,80,0">
+                    <TextBlock Foreground="White" >За несколько лет успешной работы мы накопили большой <LineBreak/>опыт сотрудничества со многими разноотраслевыми организациями. 
+    <LineBreak/>Основой успешного взаимодействия с нашими партнерами являются стабильные,
+                <LineBreak/>долгосрочные отношения на взаимовыгодной основе.
+    <LineBreak/>Представляем интересы наших партнеров и обеспечиваем <LineBreak/>эффективное взаимодействие между производителями и ритейлерами. 
+  <LineBreak/> Мы предлагаем и продвигаем услуги фирмы-дистрибьютора и остаемся в рамках b2b-рынка.</TextBlock>
+
+
+                </StackPanel>
+            </StackPanel>
+            <Button Grid.Row="1" Content="Назад" Height="30" HorizontalAlignment="Left" Width="50" Background="#212233" Foreground="White" Click="BtnBack" >
+
+            </Button>
+        </Grid>
+    </Border>
+</Page>
