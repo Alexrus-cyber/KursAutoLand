@@ -10,7 +10,7 @@
     <Border CornerRadius="20" Background="#121129" Margin="0,0,0,-73">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="400"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <StackPanel Margin="52,44,0,32" HorizontalAlignment="Left">
@@ -149,6 +149,66 @@
                 </Button>
 
             </StackPanel>
+
+            <Border Grid.Column="1"
+                    Background="#1F2949"
+                    CornerRadius="20"
+                    Height="450"
+                    Width="300"
+                    HorizontalAlignment="Left"
+                    Margin="0,0,0,40">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="0">
+                        <Ellipse Margin="0,10,0,10"  Width="150" Height="150"
+                            Grid.Row="0">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="Images/super.png"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+
+                        <TextBlock Foreground="White"
+                                   FontSize="20"
+                                   HorizontalAlignment="Center">Alex Rassadin</TextBlock>
+                    </StackPanel>
+                    
+
+                    <StackPanel Grid.Row="1">
+
+                        <RadioButton Content="Аккаунт"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}" />
+
+
+                        <RadioButton Content="Изменение пароля"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}" />
+
+
+
+                        <RadioButton Content="Смена фотографии"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+
+                        <RadioButton Content="Настройки уведомления"
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                    </StackPanel>
+                </Grid>
+
+            </Border>
+
         </Grid>
     </Border>
 </Page>

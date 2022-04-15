@@ -171,5 +171,11 @@
   <ItemGroup>
     <Folder Include="Reg\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\super.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\super1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
