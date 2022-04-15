@@ -5,105 +5,106 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:kurs"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="950"
       Title="Home">
-
-    <StackPanel>
-        <TextBlock Text="Новости"
+    <Border CornerRadius="20,0,0,0" Background="#121129">
+        <StackPanel>
+            <TextBlock Text="Новости"
                    FontSize="28"
                    Foreground="White"
                    HorizontalAlignment="Left"
-                   Margin="250,0,0,20" Width="124"
+                   Margin="450,0,0,20" Width="124"
                    />
-        <StackPanel Orientation="Horizontal">
-            <Button Width="400"
+            <StackPanel Orientation="Horizontal">
+                <Button Width="400"
                     Height="200"
                     HorizontalAlignment="left" Click="Button_Click"
-                    >
-                <Button.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#5bc3ff" Offset="0.0"/>
-                        <GradientStop Color="#3aa0ff" Offset="1"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-                <Button.Clip>
-                    <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,400,200"/>
-                </Button.Clip>
+                    Margin="150,0,0,0">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                            <GradientStop Color="#3aa0ff" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <Button.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,400,200"/>
+                    </Button.Clip>
 
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="23*"/>
-                        <RowDefinition Height="75*"/>
-                    </Grid.RowDefinitions>
-                    <StackPanel HorizontalAlignment="Left" Grid.RowSpan="2" Margin="0,0,90,0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="23*"/>
+                            <RowDefinition Height="75*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel HorizontalAlignment="Left" Grid.RowSpan="2" Margin="0,0,90,0">
 
-                        <TextBlock Text="World leader&#xA;in global finance"
+                            <TextBlock Text="World leader&#xA;in global finance"
                                    Foreground="White"
                                    FontSize="28"
                                    Margin="20,10,9,0"/>
 
-                        <TextBlock Text="Get started today!"
+                            <TextBlock Text="Get started today!"
                                    Foreground="White"
                                    FontSize="18"
                                    Margin="20,10,10,0"/>
-                    </StackPanel>
-                    <Image Width="250"
+                        </StackPanel>
+                        <Image Width="250"
                            Height="250"
                            Source="/Images/man.png"
                            HorizontalAlignment="Right"
                            VerticalAlignment="Bottom"
                            Margin="0,-54,-130,0" Grid.RowSpan="2"/>
-                </Grid>
-            </Button>
-            <Border Width="200"
+                    </Grid>
+                </Button>
+                <Border Width="200"
                     Height="200"
                     CornerRadius="10"
                     Margin="45,0,0,0">
-                <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
-                        <GradientStop Color="#FFFBD180" Offset="0.0"/>
-                        <GradientStop Color="#ffb73a" Offset="1"/>
-                    </LinearGradientBrush>
-                </Border.Background>
-            </Border>
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#FFFBD180" Offset="0.0"/>
+                            <GradientStop Color="#ffb73a" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                </Border>
 
-        </StackPanel>
+            </StackPanel>
 
-        <StackPanel>
-            <StackPanel.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="Margin" Value="15,0,0,0"/>
-                </Style>
-            </StackPanel.Resources>
+            <StackPanel>
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="15,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
 
 
-            <TextBlock Text="Так-же просматриваемые"
+                <TextBlock Text="Так-же просматриваемые"
                        Foreground="White"
                        FontSize="20"
                        HorizontalAlignment="Left"
-                       Margin="0,0,0,10"
+                       Margin="150,0,0,10"
                        />
 
-            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal">
 
-                <Border Width="150"
+                    <Border Width="150"
                         Height="150"
                         Background="#844eff"
                         CornerRadius="10"
-                        Margin="0"/>
-                <Border Width="150"
+                        Margin="150,0,0,0"/>
+                    <Border Width="150"
                         Height="150"
                         Background="#4e99ff"
                         CornerRadius="10"/>
-                <Border Width="150"
+                    <Border Width="150"
                         Height="150"
                         Background="#4eff91"
                         CornerRadius="10"/>
-                <Border Width="150"
+                    <Border Width="150"
                         Height="150"
                         Background="#ecff4e"
                         CornerRadius="10"/>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
-    </StackPanel>
+    </Border>
 </Page>

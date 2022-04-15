@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kurs"
         mc:Ignorable="d"
-        Height="600" Width="950"
+        Height="600" Width="1100"
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True"
@@ -41,7 +41,7 @@
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButtonNews_Checked"/>
 
 
-                <RadioButton Content="Акции"
+                <RadioButton Content="Услуги"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
@@ -55,7 +55,7 @@
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"/>
 
-                <RadioButton Content="MyProfile"
+                <RadioButton Content="Мой профиль"
                              Height="50"
                              Foreground="White"
                              FontSize="14"

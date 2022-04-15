@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Profile">
-    <Border CornerRadius="20" Background="#121129" Margin="0,0,0,-73">
+    <Border CornerRadius="20,0,0,0" Background="#121129" Margin="0,0,0,-73">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="400"/>
@@ -155,7 +155,7 @@
                     CornerRadius="20"
                     Height="450"
                     Width="300"
-                    HorizontalAlignment="Left"
+                    HorizontalAlignment="Center"
                     Margin="0,0,0,40">
                 <Grid>
                     <Grid.RowDefinitions>
