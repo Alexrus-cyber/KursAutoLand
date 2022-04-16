@@ -13,6 +13,7 @@
                 <ResourceDictionary Source="/Libraries/TextBoxPass.xaml"/>
                 <ResourceDictionary Source="/Libraries/TextBoxNumber.xaml"/>
                 <ResourceDictionary Source="/Libraries/TexBoxProfile.xaml"/>
+                <ResourceDictionary Source="/Libraries/ScrollView.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

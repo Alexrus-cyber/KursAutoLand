@@ -73,14 +73,14 @@
 
 
             <Button x:Name="btnReg"
-                    Width="220"
-                    Height="50"
+                    Width="150"
+                    Height="40"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center"
                     Background="#ff1d222c"
                     Foreground="White"
                     Content="Зарегистрироваться"
-                    FontSize="18"
+                    FontSize="12"
                     Grid.Row="2"
                     Margin="0,0,10,0" Click="btnReg_click"
                     >
