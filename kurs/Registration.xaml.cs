@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,9 +29,15 @@ namespace kurs
 
         private void btnReg_click(object sender, RoutedEventArgs e)
         {
+      
             Door door = new Door();
             door.Show();
             Close();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+           
         }
     }
 }

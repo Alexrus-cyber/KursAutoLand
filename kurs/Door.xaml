@@ -8,7 +8,7 @@
         Title="Door" Height="515" Width="365" WindowStyle="None"
         ResizeMode="NoResize"
          Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True" Loaded="Window_Loaded">
     <Border CornerRadius="20">
         <Border.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,1">

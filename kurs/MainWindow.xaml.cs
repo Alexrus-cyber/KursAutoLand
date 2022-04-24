@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace kurs
 {
@@ -20,6 +23,7 @@ namespace kurs
     /// </summary>
     public partial class MainWindow : Window
     {
+      
         public MainWindow()
         {
             InitializeComponent();
@@ -79,6 +83,11 @@ namespace kurs
         private void Record_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new RecordPage());
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+           
         }
     }
 }

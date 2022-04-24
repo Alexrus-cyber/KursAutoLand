@@ -69,3 +69,6 @@ D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\Libraries\S
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\RecordPage.g.cs
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\RecordPage.baml
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\Libraries\ComboBoxTheme.baml
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\bin\Debug\AutoDB.mdf
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\bin\Debug\AutoDB_log.ldf
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\kurs_Content.g.cs

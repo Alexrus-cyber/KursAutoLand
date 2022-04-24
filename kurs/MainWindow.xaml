@@ -9,7 +9,7 @@
         WindowStyle="None"
         Background="Transparent"
         AllowsTransparency="True"
-        ResizeMode="NoResize"
+        ResizeMode="NoResize" Loaded="Window_Loaded"
         >
     
         <Border Background="#272537"

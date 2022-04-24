@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +22,7 @@ namespace kurs
     /// </summary>
     public partial class Door : Window
     {
+        
         public Door()
         {
             InitializeComponent();
@@ -36,6 +40,11 @@ namespace kurs
             Registration registration = new Registration();
             registration.Show();
             Close();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
