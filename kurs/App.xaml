@@ -14,6 +14,7 @@
                 <ResourceDictionary Source="/Libraries/TextBoxNumber.xaml"/>
                 <ResourceDictionary Source="/Libraries/TexBoxProfile.xaml"/>
                 <ResourceDictionary Source="/Libraries/ScrollView.xaml"/>
+                <ResourceDictionary Source="/Libraries/ComboBoxTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

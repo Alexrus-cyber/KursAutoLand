@@ -73,5 +73,12 @@ namespace kurs
         {
             MainFrame.Navigate(new Profile());
         }
+
+   
+
+        private void Record_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new RecordPage());
+        }
     }
 }

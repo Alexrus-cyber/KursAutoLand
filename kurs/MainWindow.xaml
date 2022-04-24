@@ -61,6 +61,28 @@
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}" Checked="Myprofile"/>
+                <Button Width="102"
+                        Height="32"
+                        x:Name="Record"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        Style="{StaticResource LightweightButton}" Click="Record_Click" 
+                        Margin="0,20,0,0">
+                    <Border Width="100"
+                            Height="30"
+                            HorizontalAlignment="Center" VerticalAlignment="Center"
+                            CornerRadius="15"
+                            Background="#EEAE38"
+                            >
+                     
+                        <TextBlock Text="Запись" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                   Foreground="White"
+                                   FontWeight="SemiBold">
+                            
+                        </TextBlock>
+                    </Border>
+                </Button>
             </StackPanel>
 
 
@@ -85,6 +107,7 @@
                     Foreground="Gray"
                     Background="Transparent"
                     HorizontalAlignment="Right"
+                    
                  
                     Margin="0,0,0,6" Click="TurnApp_Click"
                    >

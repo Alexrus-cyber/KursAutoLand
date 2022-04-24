@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\App.xaml
-161590449218
+181562624174
 
-141424238324
+151638604159
 13-1505183044
-Action.xaml;Door.xaml;Home.xaml;Libraries\ButtonReg.xaml;Libraries\ScrollView.xaml;Libraries\TexBoxProfile.xaml;Libraries\TextBoxNumber.xaml;Libraries\TextBoxPass.xaml;Libraries\TextBoxReg.xaml;MainWindow.xaml;Libraries\MenuButtonTheme.xaml;News\News1.xaml;Libraries\TexboxTheme.xaml;Profile.xaml;Registration.xaml;Services\Services1.xaml;
+Action.xaml;Door.xaml;Home.xaml;Libraries\ButtonReg.xaml;Libraries\ComboBoxTheme.xaml;Libraries\ScrollView.xaml;Libraries\TexBoxProfile.xaml;Libraries\TextBoxNumber.xaml;Libraries\TextBoxPass.xaml;Libraries\TextBoxReg.xaml;MainWindow.xaml;Libraries\MenuButtonTheme.xaml;News\News1.xaml;Libraries\TexboxTheme.xaml;Profile.xaml;RecordPage.xaml;Registration.xaml;Services\Services1.xaml;
 
 True
 

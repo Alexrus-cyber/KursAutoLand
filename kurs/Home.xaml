@@ -55,17 +55,26 @@
                            Margin="0,-54,-130,0" Grid.RowSpan="2"/>
                     </Grid>
                 </Button>
-                <Border Width="200"
+                <Button Width="200"
                     Height="200"
-                    CornerRadius="10"
+                    
                     Margin="45,0,0,0">
-                    <Border.Background>
+                    <Button.Background>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
                             <GradientStop Color="#FFFBD180" Offset="0.0"/>
                             <GradientStop Color="#ffb73a" Offset="1"/>
                         </LinearGradientBrush>
-                    </Border.Background>
-                </Border>
+                    </Button.Background>
+                    <Button.Clip>
+                        <RectangleGeometry RadiusX="10" RadiusY="10" Rect="0,0,200,200"/>
+                    </Button.Clip>
+                    <Image Width="150"
+                           Height="150"
+                           Source="/Images/man.png"
+                           HorizontalAlignment="Right"
+                           VerticalAlignment="Bottom"
+                           Margin="0,-54,-130,0" Grid.RowSpan="2"/>
+                </Button>
 
             </StackPanel>
 
