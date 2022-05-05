@@ -16,7 +16,7 @@
                                      VerticalAlignment="Center"
                                      Padding="5"
                                      Foreground="#CFCFCF"
-                                     x:Name="LoginUtb"
+                               
                                      />
                             <TextBlock IsHitTestVisible="False"
                       

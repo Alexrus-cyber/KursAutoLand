@@ -22,18 +22,30 @@ namespace kurs
     /// </summary>
     public partial class Door : Window
     {
-        
+        private User _currentUser = new User();
         public Door()
         {
+            DataContext = _currentUser;
             InitializeComponent();
 
         }
 
         private void btnDoor_click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
-            Close();
+             bool successLogin = Logining(LoginTb.Text.Trim(), PasswordTb.Text.Trim());
+            MessageBox.Show(successLogin ? "Вы вошли в систему" : "Зарегистрируйтесь, Вас не существует");
+            if (successLogin == true)
+            {
+                MainWindow main = new MainWindow();
+                main.Show();
+                Close();
+            }
+            
+        }
+        public bool Logining(string email , string pass)
+        {
+
+            return AutoLandEntities.GetContext().Users.Any(p => p.Email == email && p.Password == pass) ;
         }
         private void Registr_Click(object sender, RoutedEventArgs e)
         {

@@ -35,22 +35,87 @@
                    Grid.Row="0"
                    />
 
-            <TextBox Width="200"
-                     Height="40"
-                     
-                     Grid.Row="1"
-                     HorizontalAlignment="Center"
-                     VerticalAlignment="Top"
-                     Margin="0,20,0,0"
-                     Style="{StaticResource ModernTextBoxReg}"/>
-            <TextBox Width="200"
+            <Border Grid.Row="1" Width="200" Height="40" Margin="0,0,0,150" CornerRadius="10"
+                            Background="#353340">
+                <Grid >
+                    <Rectangle StrokeThickness="1"/>
+                    <TextBox Margin="1"
+                                                          BorderThickness="0"
+                                     Background="Transparent"
+                                     VerticalAlignment="Center"
+                                     Padding="5"
+                                     Foreground="#CFCFCF"
+                                     x:Name="LoginTb"
+                                     >
+                      
+                    </TextBox>
+                    <TextBlock IsHitTestVisible="False"
+                                       Text="Введите Логин(Email)"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="10,0,0,0"
+                                       FontSize="11"
+                                       Foreground="DarkGray"
+                                       Grid.Column="1"
+                                       >
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Text , ElementName=LoginTb}" Value="">
+                                        <Setter Property="Visibility" Value="Visible"></Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                                <Setter Property="Visibility" Value="Collapsed"></Setter>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </Grid>
+            </Border>
+
+            <Border  Background="#353340"
+                     CornerRadius="10"
+                     Width="200"
                      Height="40"
                      Grid.Row="1"
                      HorizontalAlignment="Center"
                      VerticalAlignment="Top"
                      Margin="0,100,0,0"
-                     Style="{StaticResource ModernTextBoxRegPass}"/>
+                    >
+                <Grid >
+                    <Rectangle StrokeThickness="1"/>
+                    <TextBox Margin="1"
+                                                          BorderThickness="0"
+                                     Background="Transparent"
+                                     VerticalAlignment="Center"
+                                     Padding="5"
+                                     Foreground="#CFCFCF"
+                                     x:Name="PasswordTb"
+                                     >
 
+                    </TextBox>
+                    <TextBlock IsHitTestVisible="False"
+                                       Text="Введите пароль"
+                                       VerticalAlignment="Center"
+                                       HorizontalAlignment="Left"
+                                       Margin="10,0,0,0"
+                                       FontSize="11"
+                                       Foreground="DarkGray"
+                                       Grid.Column="1"
+                                       >
+                        <TextBlock.Style>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Text , ElementName=PasswordTb}" Value="">
+                                        <Setter Property="Visibility" Value="Visible"></Setter>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                                <Setter Property="Visibility" Value="Collapsed"></Setter>
+                            </Style>
+                        </TextBlock.Style>
+                    </TextBlock>
+                </Grid>
+            </Border>
+           
             <Button  Style="{StaticResource LightweightButton}"
                      x:Name="Registr"
                        IsHitTestVisible="True" 
