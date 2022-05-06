@@ -10,6 +10,7 @@
     <Property Name="SecondName" Type="nvarchar" MaxLength="50" />
     <Property Name="LastName" Type="nvarchar" MaxLength="50" />
     <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Record">
     <Key>
@@ -18,6 +19,7 @@
     <Property Name="Id_record" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Id_client" Type="int" Nullable="false" />
     <Property Name="Location" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Service" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>

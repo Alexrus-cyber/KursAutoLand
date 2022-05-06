@@ -17,6 +17,7 @@ namespace kurs
         public int Id_record { get; set; }
         public int Id_client { get; set; }
         public string Location { get; set; }
+        public string Service { get; set; }
     
         public virtual Client Client { get; set; }
     }

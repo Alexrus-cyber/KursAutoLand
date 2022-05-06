@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Clients">
       <EntityTypeMapping TypeName="AutoLandModel.Client">
         <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
           <ScalarProperty Name="Id_client" ColumnName="Id_client" />
           <ScalarProperty Name="Id_user" ColumnName="Id_user" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -16,6 +17,7 @@
     <EntitySetMapping Name="Records">
       <EntityTypeMapping TypeName="AutoLandModel.Record">
         <MappingFragment StoreEntitySet="Record">
+          <ScalarProperty Name="Service" ColumnName="Service" />
           <ScalarProperty Name="Id_record" ColumnName="Id_record" />
           <ScalarProperty Name="Id_client" ColumnName="Id_client" />
           <ScalarProperty Name="Location" ColumnName="Location" />

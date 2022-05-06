@@ -12,6 +12,7 @@
     <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="User" Relationship="Self.FK_Client_User" FromRole="Client" ToRole="User" />
     <NavigationProperty Name="Records" Relationship="Self.FK_Record_Client" FromRole="Client" ToRole="Record" />
+    <Property Name="ImagePath" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Record">
     <Key>
@@ -21,6 +22,7 @@
     <Property Name="Id_client" Type="Int32" Nullable="false" />
     <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="Client" Relationship="Self.FK_Record_Client" FromRole="Record" ToRole="Client" />
+    <Property Name="Service" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>

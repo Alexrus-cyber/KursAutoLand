@@ -38,6 +38,8 @@ namespace kurs
                 SecondNameTb.Text = AutoLandEntities.GetContext().Clients.FirstOrDefault(p => p.Id_user == id).SecondName;
                 LastNameTb.Text = AutoLandEntities.GetContext().Clients.FirstOrDefault(p => p.Id_user == id).LastName;
                 PhoneTb.Text = AutoLandEntities.GetContext().Clients.FirstOrDefault(p => p.Id_user == id).Phone;
+                LoadImage.ImageSource =  new BitmapImage(new Uri(AutoLandEntities.GetContext().Clients.FirstOrDefault(p => p.Id_user == id).ImagePath)); ;
+                NickNameTb.Text = AutoLandEntities.GetContext().Users.FirstOrDefault(p => p.Id_user == id).Login;
             }
 
         }

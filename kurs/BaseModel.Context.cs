@@ -20,7 +20,7 @@ namespace kurs
             : base("name=AutoLandEntities")
         {
         }
-        
+
         public static AutoLandEntities GetContext()
         {
             if (_context == null)
@@ -29,8 +29,6 @@ namespace kurs
             }
             return _context;
         }
-
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();

@@ -36,7 +36,7 @@ namespace kurs
             Manager.MainFrame = MainFrame;
             MainFrame.Navigate(new Home());
             id = iduser;
-            MessageBox.Show($"{id}");
+          //  MessageBox.Show($"{id}");
         }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
