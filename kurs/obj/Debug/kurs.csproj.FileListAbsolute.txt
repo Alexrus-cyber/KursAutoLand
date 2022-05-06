@@ -75,3 +75,7 @@ D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\bin\Debug\EntityFrame
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\bin\Debug\EntityFramework.xml
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\bin\Debug\EntityFramework.SqlServer.xml
 D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\bin\Debug\ru\EntityFramework.resources.dll
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\AdminPanel.g.cs
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\AdminPanel.baml
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\DataBlock.g.cs
+D:\Users\Алексей\Documents\GitHub\KursAutoLand\kurs\obj\Debug\DataBlock.baml

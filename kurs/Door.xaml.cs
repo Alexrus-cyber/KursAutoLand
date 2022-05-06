@@ -22,7 +22,7 @@ namespace kurs
     /// </summary>
     public partial class Door : Window
     {
-        private User _currentUser = new User();
+        private User _currentUser;
         public Door()
         {
             DataContext = _currentUser;
@@ -32,20 +32,33 @@ namespace kurs
 
         private void btnDoor_click(object sender, RoutedEventArgs e)
         {
-             bool successLogin = Logining(LoginTb.Text.Trim(), PasswordTb.Text.Trim());
-            MessageBox.Show(successLogin ? "Вы вошли в систему" : "Зарегистрируйтесь, Вас не существует");
-            if (successLogin == true)
+            if (LoginTb.Text.Trim() == "AlexAdmin" && PasswordTb.Text == "AdminKet11" || LoginTb.Text.Trim() == "Admin@mail.ru" && PasswordTb.Text == "AdminKet11")
             {
-                MainWindow main = new MainWindow();
-                main.Show();
+                AdminPanel admin = new AdminPanel();
+                admin.Show();
                 Close();
             }
-            
+            else
+            {
+                
+                bool successLogin = Logining(LoginTb.Text.Trim(), PasswordTb.Text.Trim());
+                MessageBox.Show(successLogin ? "Вы вошли в систему" : "Зарегистрируйтесь, Вас не существует");
+                if (successLogin == true)
+                {
+                    MainWindow main = new MainWindow(Log(LoginTb.Text.Trim(), PasswordTb.Text.Trim()).Id_user);
+                    main.Show();
+                    Close();
+                }
+
+            }
         }
         public bool Logining(string email , string pass)
         {
-
             return AutoLandEntities.GetContext().Users.Any(p => p.Email == email && p.Password == pass) ;
+        }
+        public User Log(string email, string pass)
+        {
+            return AutoLandEntities.GetContext().Users.FirstOrDefault(p => p.Email == email && p.Password == pass);
         }
         private void Registr_Click(object sender, RoutedEventArgs e)
         {

@@ -26,7 +26,7 @@ namespace kurs
         public string SecondName { get; set; }
         public string LastName { get; set; }
         public string Phone { get; set; }
-    
+        public string ImagePath { get; set; }
         public virtual User User { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Record> Records { get; set; }

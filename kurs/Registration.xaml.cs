@@ -38,10 +38,10 @@ namespace kurs
                 LoginTb.ToolTip = "Поле введено не корректно";
                 MessageBox.Show("Логин должен быть минимум из 3 символов");
             }
-            else if (LoginTb.Text.Length >= 9)
+            else if (LoginTb.Text.Length >= 12)
             {
                 LoginTb.ToolTip = "Поле введено не корректно";
-                MessageBox.Show("Логин должен быть максимум из 10 символов");
+                MessageBox.Show("Логин должен быть максимум из 13 символов");
             }
             else if (PasswordTb.Text.Length <= 7)
             {
@@ -66,10 +66,13 @@ namespace kurs
 
                 if (EmailTb.Text.Contains("@mail.ru") || EmailTb.Text.Contains("@gmail.ru"))
                 {
-                    bool canRegister = AutoLandEntities.GetContext().Users.All(p => p.Login != LoginTb.Text.Trim() || p.Email != EmailTb.Text.Trim());
+                    bool canRegister = AutoLandEntities.GetContext().Users.All(p => p.Email != EmailTb.Text.Trim());
                     if (canRegister)
                     {
                         AutoLandEntities.GetContext().Users.Add(new User { Login = LoginTb.Text.Trim(), Email = EmailTb.Text.Trim(), Password = PasswordTb.Text.Trim() });
+                        int id = _currentUser.Id_user;
+                        AutoLandEntities.GetContext().Clients.Add(new Client {Id_user = id});
+
                         AutoLandEntities.GetContext().SaveChanges();
                         MessageBox.Show("Вы прошли регистрацию");
                         Door door = new Door();
