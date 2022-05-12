@@ -37,8 +37,7 @@
                                      Padding="5"
                                      Foreground="#CFCFCF"
                                      Text="{Binding User.Login}"
-                                     x:Name="LoginTb"
-                                     >
+                                     x:Name="LoginTb"                 >
 
                         </TextBox>
                         <TextBlock IsHitTestVisible="False"
@@ -352,18 +351,18 @@
 
                         <RadioButton Content="Аккаунт"
                              Height="50"
-                             Background="#353340"
+                             
                                      Margin="0,2,0,0"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}" />
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_1" />
 
 
                         <RadioButton Content="Изменение пароля"
                              Height="50"
                                      Margin="0,2,0,0"
                              Foreground="White"
-                             Background="#353340"        
+                                     
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}" />
 
@@ -372,18 +371,18 @@
                         <RadioButton Content="Смена фотографии"
                              Height="50"
                                      Margin="0,2,0,0"
-                                     Background="#353340"
+                                     
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"/>
 
-                        <RadioButton Content="Настройки уведомления"
+                        <RadioButton Content="Удаления себя"
                              Height="50"
                                      Margin="0,2,0,0"
-                                     Background="#353340"
+                                     
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_2"/>
                     </StackPanel>
                 </Grid>
 

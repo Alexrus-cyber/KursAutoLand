@@ -20,14 +20,23 @@ namespace kurs.Services
     /// </summary>
     public partial class Services1 : Page
     {
-        public Services1()
+        private int id;
+        private int idclients;
+        public Services1(int iduser, int idclient)
         {
             InitializeComponent();
+            id = iduser;
+            idclients = idclient;
         }
 
         private void BtnBack(object sender, RoutedEventArgs e)
         {
             Manager.MainFrame.GoBack();
+        }
+
+        private void Record_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new RecordPage(id, idclients));
         }
     }
 }

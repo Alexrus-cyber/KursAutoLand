@@ -20,10 +20,39 @@ namespace kurs
     /// </summary>
     public partial class DataBlock : Page
     {
-        public DataBlock()
+        private int id;
+        public DataBlock(int idrecord)
         {
             InitializeComponent();
+            id = idrecord;
+
             DGridRecords.ItemsSource = AutoLandEntities.GetContext().Records.ToList();
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            
+            
+            var rec = DGridRecords.SelectedItems.Cast<Record>().ToList();
+            if (MessageBox.Show($"Вы точно хотите удалить следующие элементы {rec.Count()}?" ,"Alarm" , MessageBoxButton.YesNo,MessageBoxImage.Question)== MessageBoxResult.Yes)
+            {
+                AutoLandEntities.GetContext().Records.RemoveRange(rec);
+
+                AutoLandEntities.GetContext().SaveChanges();
+                MessageBox.Show("Вы удалили");
+                DGridRecords.ItemsSource = AutoLandEntities.GetContext().Records.ToList();
+            }
+          
+
+        }
+
+        private void DGridRecords_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Visibility == Visibility.Visible)
+            {
+                AutoLandEntities.GetContext().ChangeTracker.Entries().ToList().ForEach(p => p.Reload());
+                DGridRecords.ItemsSource = AutoLandEntities.GetContext().Records.ToList();
+            }
         }
     }
 }

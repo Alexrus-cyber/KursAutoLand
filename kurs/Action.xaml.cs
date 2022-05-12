@@ -20,14 +20,18 @@ namespace kurs
     /// </summary>
     public partial class Action : Page
     {
-        public Action()
+        private int id;
+        private int idclients;
+        public Action(int iduser , int idclient)
         {
             InitializeComponent();
+            id = iduser;
+            idclients = idclient;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Services.Services1());
+            Manager.MainFrame.Navigate(new Services.Services1(id, idclients));
         }
     }
 }

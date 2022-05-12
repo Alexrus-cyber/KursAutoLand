@@ -23,7 +23,8 @@ namespace kurs
     /// </summary>
     public partial class MainWindow : Window
     {
-       private int id;
+        private int idclient;
+        private int id;
         public MainWindow()
         {
             InitializeComponent();
@@ -36,12 +37,19 @@ namespace kurs
             Manager.MainFrame = MainFrame;
             MainFrame.Navigate(new Home());
             id = iduser;
-          //  MessageBox.Show($"{id}");
+            
+            idclient = AutoLandEntities.GetContext().Clients.FirstOrDefault(p => p.Id_user == id).Id_client;
+             
+               
+            
+            
+
         }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
+   
 
         private void RadioButtonNews_Checked(object sender, RoutedEventArgs e)
         {
@@ -50,7 +58,7 @@ namespace kurs
 
         private void RadioButtonAction_Checked(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new Action());
+            MainFrame.Navigate(new Action(id , idclient));
         }
 
 
@@ -83,14 +91,14 @@ namespace kurs
 
         private void Myprofile(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new Profile(id));
+            MainFrame.Navigate(new Profile(id, idclient, this));
         }
 
    
 
         private void Record_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new RecordPage());
+            MainFrame.Navigate(new RecordPage(id,idclient));
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)

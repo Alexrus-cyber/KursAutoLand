@@ -71,7 +71,7 @@ namespace kurs
                     {
                         AutoLandEntities.GetContext().Users.Add(new User { Login = LoginTb.Text.Trim(), Email = EmailTb.Text.Trim(), Password = PasswordTb.Text.Trim() });
                         int id = _currentUser.Id_user;
-                        AutoLandEntities.GetContext().Clients.Add(new Client {Id_user = id});
+                        AutoLandEntities.GetContext().Clients.Add(new Client { Id_user = id, ImagePath = "D:/Users/Алексей/Desktop/super.png"});
 
                         AutoLandEntities.GetContext().SaveChanges();
                         MessageBox.Show("Вы прошли регистрацию");
@@ -82,7 +82,7 @@ namespace kurs
                     }
                     else
                     {
-                        MessageBox.Show("Ебать ты даун");
+                        MessageBox.Show("Простите но человек с данным email уже существует");
                     }
 
                 }

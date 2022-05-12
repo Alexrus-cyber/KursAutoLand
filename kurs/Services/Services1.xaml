@@ -15,24 +15,46 @@
                 <RowDefinition Height="40"></RowDefinition>
             </Grid.RowDefinitions>
             <StackPanel>
-                <TextBlock Text="Новости"
+                <TextBlock Text="Услуги"
                    FontSize="28"
                    Foreground="White"
                    HorizontalAlignment="Left"
                    Margin="450,0,0,20" Width="124"
                    />
-                <StackPanel Orientation="Horizontal" Margin="250,0,80,0">
-                    <TextBlock Foreground="White" >За несколько лет успешной работы мы накопили большой <LineBreak/>опыт сотрудничества со многими разноотраслевыми организациями. 
-    <LineBreak/>Основой успешного взаимодействия с нашими партнерами являются стабильные,
-                <LineBreak/>долгосрочные отношения на взаимовыгодной основе.
+                <StackPanel Orientation="Horizontal"  Margin="100,0,-147,0">
+                    <TextBlock Foreground="White" FontSize="20" Width="844" >За несколько лет успешной работы мы накопили большой <LineBreak/>опыт сотрудничества со многими разноотраслевыми организациями. 
+    <LineBreak/>Основой успешного взаимодействия с нашими партнерами являются<LineBreak/> стабильные,
+                долгосрочные отношения на взаимовыгодной основе.
     <LineBreak/>Представляем интересы наших партнеров и обеспечиваем <LineBreak/>эффективное взаимодействие между производителями и ритейлерами. 
-  <LineBreak/> Мы предлагаем и продвигаем услуги фирмы-дистрибьютора и остаемся в рамках b2b-рынка.</TextBlock>
+  <LineBreak/> Мы предлагаем и продвигаем услуги фирмы-дистрибьютора и остаемся<LineBreak/> в рамках b2b-рынка.</TextBlock>
 
 
                 </StackPanel>
             </StackPanel>
             <Button Grid.Row="1" Content="Назад" Height="30" HorizontalAlignment="Left" Width="50" Background="#212233" Foreground="White" Click="BtnBack" >
 
+            </Button>
+            <Button Width="102"
+                        Height="32"
+                        x:Name="Record"
+                        Background="Transparent"
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        Style="{StaticResource LightweightButton}" Click="Record_Click" 
+                        Margin="0,0,0,0" Grid.Row="1" HorizontalAlignment="Center">
+                <Border Width="100"
+                            Height="30"
+                            HorizontalAlignment="Right" VerticalAlignment="Center"
+                            CornerRadius="15"
+                            Background="#EEAE38" Margin="0,1,1,1"
+                            >
+
+                    <TextBlock Text="Запись" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                   Foreground="White"
+                                   FontWeight="SemiBold">
+
+                    </TextBlock>
+                </Border>
             </Button>
         </Grid>
     </Border>

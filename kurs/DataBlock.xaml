@@ -9,14 +9,21 @@
       Title="DataBlock">
 
     <Grid>
-        <DataGrid x:Name="DGridRecords" AutoGenerateColumns="False" IsReadOnly="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="400"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="DGridRecords" AutoGenerateColumns="False" IsReadOnly="True" IsVisibleChanged="DGridRecords_IsVisibleChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Местоположение" Binding="{Binding Location}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn x:Name="loc" Header="Местоположение" Binding="{Binding Location}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Имя" Binding="{Binding Client.Name}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding Client.SecondName}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Отчество" Binding="{Binding Client.LastName}" Width="*"></DataGridTextColumn>
                 <DataGridTextColumn Header="Номер телефона" Binding="{Binding Client.Phone}" Width="*"></DataGridTextColumn>
                 </DataGrid.Columns>
         </DataGrid>
+        <Button x:Name="Delete" Grid.Row="1" Width="100" Height="40" HorizontalAlignment="Right" Background="Transparent" Foreground="White" Content="Удалить" Click="Delete_Click">
+            
+        </Button>
     </Grid>
 </Page>
