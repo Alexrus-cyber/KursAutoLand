@@ -11,8 +11,8 @@
         AllowsTransparency="True"
         ResizeMode="NoResize" Loaded="Window_Loaded"
         >
-    
-        <Border Background="#272537"
+
+    <Border Background="#272537"
             CornerRadius="20"
             Mouse.MouseDown="Border_MouseDown"
             >
@@ -75,11 +75,11 @@
                             CornerRadius="15"
                             Background="#EEAE38"
                             >
-                     
+
                         <TextBlock Text="Запись" VerticalAlignment="Center" HorizontalAlignment="Center"
                                    Foreground="White"
                                    FontWeight="SemiBold">
-                            
+
                         </TextBlock>
                     </Border>
                 </Button>
@@ -150,5 +150,5 @@
             <Frame NavigationUIVisibility="Hidden" x:Name="MainFrame" Grid.Column="1" Grid.Row="1"></Frame>
         </Grid>
     </Border>
-   
+
 </Window>

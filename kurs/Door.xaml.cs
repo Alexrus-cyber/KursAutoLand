@@ -52,7 +52,7 @@ namespace kurs
 
             }
         }
-        public bool Logining(string email , string pass)
+        public static bool Logining(string email , string pass)
         {
             return AutoLandEntities.GetContext().Users.Any(p => p.Email == email && p.Password == pass) ;
         }

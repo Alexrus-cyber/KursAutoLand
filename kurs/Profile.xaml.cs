@@ -149,7 +149,15 @@ namespace kurs
                
                
             }
-        
-            
+
+        private void btnBackDoor_click(object sender, RoutedEventArgs e)
+        {
+            Door door = new Door();
+            door.Show();
+            if (main != null)
+            {
+                main.Close();
+            }
+        }
     }
 }

@@ -376,13 +376,20 @@
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked"/>
 
-                        <RadioButton Content="Удаления себя"
+                        <RadioButton Content="Удаление аккаунта"
                              Height="50"
                                      Margin="0,2,0,0"
                                      
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}" Checked="RadioButton_Checked_2"/>
+                        <RadioButton Content="Выход из аккаунта"
+                             Height="50"
+                                     Margin="0,2,0,0"
+                                     
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}" Checked="btnBackDoor_click"/>
                     </StackPanel>
                 </Grid>
 
